@@ -4,9 +4,10 @@ export const ButtonWrapper = styled.button<{ backgroundColor: string, whiteBorde
   border: none;
   display: flex;
   cursor: pointer;
-  padding: 12px 36px;
+  padding: 0.65rem 1.5rem;
   align-items: center;
   border-radius: 50px;
+  min-width: fit-content;
   justify-content: center;
   background: ${(props) => props.backgroundColor};
   border: ${({ whiteBorder }) => (whiteBorder ? `1px solid #ffffff` : 'none')};
@@ -19,7 +20,7 @@ export const ButtonWrapper = styled.button<{ backgroundColor: string, whiteBorde
 
 export const ButtonText = styled.p`
   display: flex;
-  font-size: 15.2px;
+  font-size: 0.95rem;
   align-items: center;
   text-transform: uppercase;
   justify-content: space-between;

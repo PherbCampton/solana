@@ -12,7 +12,7 @@ const Hero = () => {
           Fast for everyone.{" "}
         </S.heroHeader>
         <S.heroSubHeader>
-          Bring blockchain to the people. Solana supports experiences <br /> for
+          Bring blockchain to the people. Solana supports experiences for
           power users, new consumers, and everyone in between.
         </S.heroSubHeader>
         <S.buttons>

@@ -3,6 +3,7 @@ import "styled-components";
 
 export const BREAKPOINT_SIZES = {
   xs: 320,
+  xx: 357,
   sm: 563,
   md: 768,
   lg: 1024,
@@ -16,6 +17,7 @@ export const BREAK_POINTS = {
   lg: `(min-width: ${BREAKPOINT_SIZES.md}px and max-width: ${BREAKPOINT_SIZES.lg}px)`,
   xl: `(min-width: ${BREAKPOINT_SIZES.lg}px and max-width: ${BREAKPOINT_SIZES.xl}px)`,
   xsAndSmaller: `(max-width: ${BREAKPOINT_SIZES.xs}px)`,
+  xxAndSmaller: `(max-width: ${BREAKPOINT_SIZES.xx}px)`,
   smAndSmaller: `(max-width: ${BREAKPOINT_SIZES.sm}px)`,
   mdAndSmaller: `(max-width: ${BREAKPOINT_SIZES.md}px)`,
   lgAndSmaller: `(max-width: ${BREAKPOINT_SIZES.lg}px)`,

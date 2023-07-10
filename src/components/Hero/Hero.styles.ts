@@ -44,7 +44,7 @@ export const buttons = styled.div`
   justify-content: center;
   gap: 10px;
 
-  @media ${(p) => p.theme.breakpoints.smAndSmaller} {
+  @media ${(p) => p.theme.breakpoints.xxAndSmaller} {
     flex-direction: column;
     align-items: center;
   }
