@@ -4,7 +4,7 @@ interface CardProps {
   borderColor: string;
   heading: string;
   description: string;
-  value: string;
+  value: number | string;
   tag: string;
 }
 
@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <S.Wrapper>
-      <S.Heading borderColor={borderColor}>{heading}</S.Heading>
+      <S.Heading bordercolor={borderColor}>{heading}</S.Heading>
       <S.Description>{description}</S.Description>
       <S.Value>{value}</S.Value>
       <S.Tag>{tag}</S.Tag>

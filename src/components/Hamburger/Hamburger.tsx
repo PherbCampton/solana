@@ -12,7 +12,7 @@ const Hamburger: React.FC<Hamburger> = ({onClick, isOpen}) => {
 
   return (
     <S.MenuContainer>
-      <S.HamburgerMenu onClick={onClick} isOpen={isOpen}>
+      <S.HamburgerMenu onClick={onClick} isopen={isOpen}>
         <div></div>
         <div></div>
         <div></div>

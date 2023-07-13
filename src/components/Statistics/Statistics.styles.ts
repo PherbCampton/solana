@@ -1,9 +1,13 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
+  overflow: hidden;
+  background-image: url("./images/statistic-background.png");
+`;
+
+export const Maxwidth = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 `;
 
 export const TopContent = styled.div`
@@ -26,6 +30,22 @@ export const BottomContent = styled.div`
 
   .tag {
     margin-bottom: 80px;
+    padding-left: 10px;
+  }
+
+  .tag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #1fcff1;
+  }
+
+  @media ${(p) => p.theme.breakpoints.lgAndLarger} {
+    display: flex;
   }
 `;
 
@@ -39,6 +59,8 @@ export const StatisticsHeader = styled.h2`
   letter-spacing: -1px;
 
   @media ${(p) => p.theme.breakpoints.lgAndLarger} {
+    margin-top: 80px;
+
     .block {
       display: block;
     }
@@ -79,4 +101,24 @@ export const Cards = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  .margin-top {
+    margin-top: 80px;
+  }
+
+  @media ${(p) => p.theme.breakpoints.lgAndLarger} {
+    width: 70%;
+    gap: 40px;
+    flex-direction: row;
+  }
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media ${(p) => p.theme.breakpoints.lgAndLarger} {
+    gap: 20px;
+  }
 `;

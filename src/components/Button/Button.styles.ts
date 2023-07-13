@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonWrapper = styled.button<{ backgroundColor: string, whiteBorder: boolean | undefined}>`
+export const ButtonWrapper = styled.button<{ backgroundcolor: string, whiteborder: string}>`
   border: none;
   display: flex;
   cursor: pointer;
@@ -9,8 +9,8 @@ export const ButtonWrapper = styled.button<{ backgroundColor: string, whiteBorde
   border-radius: 50px;
   min-width: fit-content;
   justify-content: center;
-  background: ${(props) => props.backgroundColor};
-  border: ${({ whiteBorder }) => (whiteBorder ? `1px solid #ffffff` : 'none')};
+  background: ${(props) => props.backgroundcolor};
+  border: ${({ whiteborder }) => (whiteborder ? `1px solid #ffffff` : 'none')};
 
 
   &:hover {

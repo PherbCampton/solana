@@ -5,7 +5,7 @@ export const MenuContainer = styled.div`
   position: relative;
 `;
 
-export const HamburgerMenu = styled.div<{ isOpen: boolean }>`
+export const HamburgerMenu = styled.div<{ isopen: boolean }>`
   width: 30px;
   height: 20px;
   display: flex;
@@ -24,15 +24,15 @@ export const HamburgerMenu = styled.div<{ isOpen: boolean }>`
 
   div:nth-child(1) {
     transform-origin: top left;
-    transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "none")};
+    transform: ${({ isopen }) => (isopen ? "rotate(45deg)" : "none")};
   }
 
   div:nth-child(2) {
-    opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
+    opacity: ${({ isopen }) => (isopen ? "0" : "1")};
   }
 
   div:nth-child(3) {
     transform-origin: bottom left;
-    transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "none")};
+    transform: ${({ isopen }) => (isopen ? "rotate(-45deg)" : "none")};
   }
 `;

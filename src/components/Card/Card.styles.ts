@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  z-index: -1;
   border: 0;
   background: rgba(0, 0, 0, 0.28);
   background: rgba(0, 0, 0, 0.4);
@@ -10,12 +9,16 @@ export const Wrapper = styled.div`
   backdrop-filter: blur(20px);
   border-radius: 24px;
   padding: 32px;
+
+  @media ${(p) => p.theme.breakpoints.lgAndLarger} {
+    border: none;
+  }
 `;
 
-export const Heading = styled.h5<{ borderColor: string }>`
+export const Heading = styled.h5<{ bordercolor: string }>`
   border-left: 2px solid;
   padding-left: 15px;
-  border-color: ${({ borderColor }) => borderColor};
+  border-color: ${({ bordercolor }) => bordercolor};
   font-size: 1.75rem;
   line-height: 118%;
   margin-bottom: 8px;
@@ -24,12 +27,13 @@ export const Heading = styled.h5<{ borderColor: string }>`
 export const Description = styled.p`
   color: #c4c4c4;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 25px;
+  font-weight: var(--font-weight-light);
 `;
 
 export const Tag = styled.p`
   color: #c4c4c4;
-  font-size: 1rem;
+  font-size: 15px;
   text-transform: uppercase;
 `;
 
@@ -39,6 +43,8 @@ export const Value = styled.p`
   padding-left: 10px;
   font-size: 1.75rem;
   margin-bottom: 8px;
+  font-weight: var(--font-weight-thin);
+  word-wrap: normal;
 
   &::before {
     content: "";

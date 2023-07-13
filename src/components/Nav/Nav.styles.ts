@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const wrapper = styled.div`
+z-index: 1;
 position: sticky;
 top:0;
 background: rgba(0,0,0,.95);
