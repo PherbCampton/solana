@@ -21,7 +21,7 @@ const Hero = () => {
           )"
             text="start building"
           />
-          <Button backgroundColor="#000000" text="read docs" border="true" />
+          <Button backgroundColor="#000000" text="read docs" border={true} />
         </S.buttons>
       </S.content>
     </S.wrapper>

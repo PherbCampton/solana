@@ -2,7 +2,7 @@ import { ButtonWrapper, ButtonText } from "./Button.styles";
 
 interface ButtonProps {
   text: string;
-  border?: string;
+  border?: boolean | undefined;
   backgroundColor: string;
 }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonWrapper = styled.button<{ backgroundcolor: string, whiteborder: string}>`
+export const ButtonWrapper = styled.button<{ backgroundcolor: string, whiteborder: boolean | undefined}>`
   border: none;
   display: flex;
   cursor: pointer;
