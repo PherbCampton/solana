@@ -1,4 +1,4 @@
-import MobileNavItem from "../MobileNavItem/MobileNavItem";
+import MobileNavItem from "./MobileNavItem/MobileNavItem";
 import * as S from "./MobileNav.styles";
 
 interface MobileNavProps {

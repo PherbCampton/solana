@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const NavigationMenu = styled.nav<{ isOpen: boolean }>`
+z-index: 2000;
   left: 0;
   right: 0;
   width: 100%;
   position: absolute;
-  height: ${({ isOpen }) => (isOpen ? "100vh" : 0)};
+  height: ${({ isOpen }) => (isOpen ? "calc(100vh - 60px)" : 0)};
+  top: 100%;
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   padding: 1rem;
@@ -15,8 +17,7 @@ export const NavigationMenu = styled.nav<{ isOpen: boolean }>`
       transparent 250px
     ),
     linear-gradient(180deg, #000 70%, #181222);
-  height: calc(100vh - 68px) !important;
-  overflow-y: scroll;
+  overflow: scroll;
 `;
 
 export const NavigationList = styled.ul`

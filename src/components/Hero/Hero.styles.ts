@@ -1,14 +1,54 @@
 import { styled } from "styled-components";
 
 export const wrapper = styled.div`
-  height: 100vh;
-  background-image: url("/images/hero.png"), url("/images/hero.png");
-  background-repeat: no-repeat, no-repeat;
-  /* background-position: top left, top right; */
-  background-position-x: -170px, 1200px;
-  background-position-y: top, top;
-  background-size: 600px, right;
-  background-attachment: scroll;
+
+  .small-ring-container {
+    margin-top: -70px;
+    position: absolute;
+    z-index: -1;
+    top: -500px;
+    left: -900px;
+    width: 1200px;
+    height: 1200px;
+    overflow: clip;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+
+    @media (min-width: 768px) {
+      top: -150px;
+      left: -850px;
+    }
+  }
+
+  .small-ring {
+    object-fit: contain;
+    object-position: top;
+  }
+`;
+
+export const BigRingContainer = styled.div`
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -1100px;
+  width: 1600px;
+  height: 1600px;
+`;
+
+export const BigRing = styled.img`
+  height: 100%;
+  width: 100%;
+  size: 100vw;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: -340px;
+  color: transparent;
+  object-fit: contain;
+  object-position: top;
+  vertical-align: middle;
 `;
 
 export const content = styled.div`
@@ -37,12 +77,14 @@ export const heroSubHeader = styled.div`
   font-size: 1.3125rem;
   line-height: 130%;
   margin: 3rem auto;
+  max-width: 600px;
 `;
 
 export const buttons = styled.div`
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: ;
 
   @media ${(p) => p.theme.breakpoints.xxAndSmaller} {
     flex-direction: column;

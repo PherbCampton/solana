@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MenuContainer = styled.div`
   display: flex;
@@ -24,15 +24,15 @@ export const HamburgerMenu = styled.div<{ isOpen: boolean }>`
 
   div:nth-child(1) {
     transform-origin: top left;
-    transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'none')};
+    transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "none")};
   }
 
   div:nth-child(2) {
-    opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
+    opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
   }
 
   div:nth-child(3) {
     transform-origin: bottom left;
-    transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'none')};
+    transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "none")};
   }
 `;

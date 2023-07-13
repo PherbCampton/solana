@@ -1,19 +1,17 @@
 import * as S from "./Hero.styles";
-import Nav from "../Nav/Nav";
 import Button from "../Button/Button";
 
 const Hero = () => {
   return (
     <S.wrapper>
-      <Nav />
       <S.content>
         <S.heroHeader>
           Powerful for developers. <br />
           Fast for everyone.{" "}
         </S.heroHeader>
         <S.heroSubHeader>
-          Bring blockchain to the people. Solana supports experiences for
-          power users, new consumers, and everyone in between.
+          Bring blockchain to the people. Solana supports experiences for power
+          users, new consumers, and everyone in between.
         </S.heroSubHeader>
         <S.buttons>
           <Button
@@ -23,11 +21,7 @@ const Hero = () => {
           )"
             text="start building"
           />
-          <Button
-            backgroundColor="#000000"
-            text="read docs"
-            border={true}
-          />
+          <Button backgroundColor="#000000" text="read docs" border={true} />
         </S.buttons>
       </S.content>
     </S.wrapper>

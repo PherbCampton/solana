@@ -12,5 +12,6 @@ max-width: 1200px;
 display: flex;
 padding: 20px 20px;
 z-index: 3999;
+align-items: center;
 justify-content: space-between;
 `
