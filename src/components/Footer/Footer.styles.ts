@@ -120,9 +120,11 @@ export const Row = styled.div`
   flex-wrap: wrap;
 `;
 export const Lang = styled.button`
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: start;
   gap: 5px;
   color: #848895;
   background: transparent;
